@@ -1,0 +1,64 @@
+# ReinforceWall Configuration File
+# This file allows flexible configuration without modifying code
+
+# Reward Configuration
+rewards:
+  block_attack: 10.0          # Reward for successfully blocking an attack
+  log_attack: 1.0             # Reward for logging/alerting an attack
+  block_legitimate: -5.0      # Penalty for blocking legitimate traffic (false positive)
+  ignore_attack: -2.0         # Penalty for ignoring an attack (false negative)
+  ignore_legitimate: -1.0     # Minor penalty for ignoring legitimate traffic
+
+# Environment Configuration
+environment:
+  max_episode_steps: 100      # Maximum steps per episode
+  state_dimension: 15         # Number of features in state vector
+  num_actions: 4              # Number of possible actions (block, alert, log, ignore)
+
+# Attack Simulation Configuration
+attacks:
+  prob_sql_injection: 0.1     # Probability of SQL injection attack per timestep
+  prob_xss: 0.1               # Probability of XSS attack per timestep
+  prob_brute_force: 0.15      # Probability of brute force attack per timestep
+  prob_normal: 0.65           # Probability of normal traffic
+  
+  # Attack intensity
+  sql_injection_requests: 5   # Number of requests per SQL injection attack
+  xss_requests: 3             # Number of requests per XSS attack
+  brute_force_requests: 10    # Number of requests per brute force attack
+  
+  # Time window for request frequency calculation (seconds)
+  time_window_seconds: 60
+
+# Firewall Configuration
+firewall:
+  simulation_mode: true        # If true, simulate actions without real iptables (safe for demos)
+  log_dir: "data/logs"        # Directory for firewall logs
+  alert_log_file: "data/logs/alerts.log"
+  traffic_log_file: "data/logs/traffic.log"
+  
+  # iptables settings (only used if simulation_mode is false)
+  iptables_chain: "INPUT"
+  iptables_table: "filter"
+
+# Training Configuration (for future DQN implementation)
+training:
+  learning_rate: 0.001
+  batch_size: 32
+  memory_size: 10000
+  gamma: 0.95                 # Discount factor
+  epsilon_start: 1.0          # Initial exploration rate
+  epsilon_end: 0.01          # Final exploration rate
+  epsilon_decay: 0.995       # Exploration decay rate
+
+# Metrics Configuration
+metrics:
+  output_dir: "data/metrics"
+  export_format: ["json", "csv"]  # Export formats for metrics
+
+# Logging Configuration
+logging:
+  level: "INFO"               # Logging level: DEBUG, INFO, WARNING, ERROR
+  log_dir: "data/logs"
+  console_output: true        # Print logs to console
+
