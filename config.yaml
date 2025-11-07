@@ -17,15 +17,31 @@ environment:
 
 # Attack Simulation Configuration
 attacks:
-  prob_sql_injection: 0.1     # Probability of SQL injection attack per timestep
-  prob_xss: 0.1               # Probability of XSS attack per timestep
-  prob_brute_force: 0.15      # Probability of brute force attack per timestep
-  prob_normal: 0.65           # Probability of normal traffic
+  prob_sql_injection: 0.07    # Probability of SQL injection attack per timestep
+  prob_xss: 0.07              # Probability of XSS attack per timestep
+  prob_brute_force: 0.08      # Probability of brute force attack per timestep
+  prob_ddos: 0.07             # Probability of DDoS attack per timestep
+  prob_command_injection: 0.05 # Probability of command injection attack per timestep
+  prob_path_traversal: 0.04   # Probability of path traversal attack per timestep
+  prob_port_scanning: 0.04    # Probability of port scanning attack per timestep
+  prob_csrf: 0.03             # Probability of CSRF attack per timestep
+  prob_mitm: 0.02             # Probability of MITM attack per timestep
+  prob_phishing: 0.03         # Probability of phishing attack per timestep
+  prob_normal: 0.50           # Probability of normal traffic
   
   # Attack intensity
   sql_injection_requests: 5   # Number of requests per SQL injection attack
   xss_requests: 3             # Number of requests per XSS attack
   brute_force_requests: 10    # Number of requests per brute force attack
+  ddos_requests: 50           # Number of requests per DDoS attack
+  ddos_num_ips: 10            # Number of IPs involved in DDoS attack
+  command_injection_requests: 4  # Number of requests per command injection attack
+  path_traversal_requests: 6  # Number of requests per path traversal attack
+  port_scanning_requests: 20  # Number of requests per port scanning attack
+  port_scanning_ports: [80, 443, 8080, 8443, 22, 21, 25, 3306, 5432, 6379]  # Ports to scan
+  csrf_requests: 3            # Number of requests per CSRF attack
+  mitm_requests: 5            # Number of requests per MITM attack
+  phishing_requests: 4        # Number of requests per phishing attack
   
   # Time window for request frequency calculation (seconds)
   time_window_seconds: 60

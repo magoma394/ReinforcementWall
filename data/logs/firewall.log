@@ -1,0 +1,389 @@
+2025-11-07 20:25:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:25:00 - firewall - INFO - Firewall alert - IP: 192.168.1.23, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:25:00 - firewall - INFO - Firewall log - IP: 192.168.1.23, Status: SUCCESS, Details: {'endpoint': '/read?file=..%2F..%2F..%2Fetc%2Fpasswd', 'method': 'GET', 'payload_type': 'path_traversal', 'payload_size': 27, 'is_attack': True}
+2025-11-07 20:25:00 - firewall - INFO - Firewall alert - IP: 192.168.1.23, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:25:00 - firewall - INFO - Firewall alert - IP: 192.168.1.23, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:25:00 - firewall - INFO - Firewall alert - IP: 192.168.1.23, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:25:00 - firewall - INFO - Firewall log - IP: 192.168.1.23, Status: SUCCESS, Details: {'endpoint': '/download?file=..%2F..%2F..%2Fetc%2Fpasswd', 'method': 'GET', 'payload_type': 'path_traversal', 'payload_size': 27, 'is_attack': True}
+2025-11-07 20:25:00 - firewall - INFO - Firewall alert - IP: 192.168.1.21, Status: SUCCESS, Details: command_injection
+2025-11-07 20:25:00 - firewall - INFO - Firewall alert - IP: 192.168.1.21, Status: SUCCESS, Details: command_injection
+2025-11-07 20:25:00 - firewall - INFO - Simulated blocking IP 192.168.1.21: Agent blocked command_injection
+2025-11-07 20:25:00 - firewall - INFO - Firewall block - IP: 192.168.1.21, Status: SUCCESS, Details: Agent blocked command_injection
+2025-11-07 20:53:51 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:53:51 - firewall - INFO - Simulated blocking IP 192.168.1.10: Agent blocked brute_force
+2025-11-07 20:53:51 - firewall - INFO - Firewall block - IP: 192.168.1.10, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:53:51 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.20: Agent blocked normal
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.20, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.21: Agent blocked sql_injection
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.21, Status: SUCCESS, Details: Agent blocked sql_injection
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.26, Status: SUCCESS, Details: suspicious
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.49: Agent blocked ddos
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.49, Status: SUCCESS, Details: Agent blocked ddos
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.49, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'POST', 'payload_type': 'normal', 'payload_size': 1021, 'is_attack': False}
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.5, Status: SUCCESS, Details: {'endpoint': '/download?file=%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd', 'method': 'GET', 'payload_type': 'path_traversal', 'payload_size': 39, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.5: Agent blocked path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.5, Status: SUCCESS, Details: Agent blocked path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.13, Status: SUCCESS, Details: {'endpoint': '/dashboard', 'method': 'POST', 'payload_type': 'normal', 'payload_size': 200, 'is_attack': False}
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.44, Status: SUCCESS, Details: brute_force
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.44, Status: SUCCESS, Details: brute_force
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.44, Status: SUCCESS, Details: brute_force
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.44, Status: SUCCESS, Details: brute_force
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.44, Status: SUCCESS, Details: brute_force
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.44, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 12, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.44, Status: SUCCESS, Details: brute_force
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.20: Agent blocked brute_force
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.20, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.34, Status: SUCCESS, Details: suspicious
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.49, Status: SUCCESS, Details: suspicious
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.34, Status: SUCCESS, Details: xss
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.34, Status: SUCCESS, Details: {'endpoint': '/api/data', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 25, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.34, Status: SUCCESS, Details: {'endpoint': '/profile', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 32, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.41, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 10, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.41, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 13, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.41, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 11, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.41: Agent blocked brute_force
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.41, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.4, Status: SUCCESS, Details: {'endpoint': '/dashboard', 'method': 'PUT', 'payload_type': 'normal', 'payload_size': 163, 'is_attack': False}
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.28, Status: SUCCESS, Details: command_injection
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.28, Status: SUCCESS, Details: {'endpoint': '/admin/command', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 32, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Firewall log - IP: 192.168.1.28, Status: SUCCESS, Details: {'endpoint': '/admin/command', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 8, 'is_attack': True}
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.28, Status: SUCCESS, Details: command_injection
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.22, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.22: Agent blocked path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.22, Status: SUCCESS, Details: Agent blocked path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.36, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.36, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.36: Agent blocked path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.36, Status: SUCCESS, Details: Agent blocked path_traversal
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.29, Status: SUCCESS, Details: xss
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.29: Agent blocked xss
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.29, Status: SUCCESS, Details: Agent blocked xss
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.35: Agent blocked normal
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.35, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.49: Agent blocked sql_injection
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.49, Status: SUCCESS, Details: Agent blocked sql_injection
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:03 - firewall - INFO - Firewall alert - IP: 192.168.1.8, Status: SUCCESS, Details: ddos
+2025-11-07 20:55:03 - firewall - INFO - Simulated blocking IP 192.168.1.32: Agent blocked ddos
+2025-11-07 20:55:03 - firewall - INFO - Firewall block - IP: 192.168.1.32, Status: SUCCESS, Details: Agent blocked ddos
+2025-11-07 20:55:03 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.7: Agent blocked normal
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.7, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.39: Agent blocked sql_injection
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.39, Status: SUCCESS, Details: Agent blocked sql_injection
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.35, Status: SUCCESS, Details: command_injection
+2025-11-07 20:55:19 - firewall - INFO - Firewall log - IP: 192.168.1.35, Status: SUCCESS, Details: {'endpoint': '/api/run', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 11, 'is_attack': True}
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.35, Status: SUCCESS, Details: command_injection
+2025-11-07 20:55:19 - firewall - INFO - Firewall log - IP: 192.168.1.35, Status: SUCCESS, Details: {'endpoint': '/api/run', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 4, 'is_attack': True}
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.18: Agent blocked brute_force
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.18, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Firewall log - IP: 192.168.1.4, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 25, 'is_attack': True}
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.4: Agent blocked xss
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.4, Status: SUCCESS, Details: Agent blocked xss
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.34, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.34, Status: SUCCESS, Details: path_traversal
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.34: Agent blocked path_traversal
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.34, Status: SUCCESS, Details: Agent blocked path_traversal
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Firewall log - IP: 192.168.1.36, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 124, 'is_attack': True}
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.36: Agent blocked port_scanning
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.36, Status: SUCCESS, Details: Agent blocked port_scanning
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.49: Agent blocked sql_injection
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.49, Status: SUCCESS, Details: Agent blocked sql_injection
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.45: Agent blocked normal
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.45, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.17, Status: SUCCESS, Details: ddos
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.18, Status: SUCCESS, Details: ddos
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.31, Status: SUCCESS, Details: ddos
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.36, Status: SUCCESS, Details: ddos
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.49, Status: SUCCESS, Details: ddos
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.24, Status: SUCCESS, Details: ddos
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.35: Agent blocked ddos
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.35, Status: SUCCESS, Details: Agent blocked ddos
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.11: Agent blocked brute_force
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.11, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.42: Agent blocked path_traversal
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.42, Status: SUCCESS, Details: Agent blocked path_traversal
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.32, Status: SUCCESS, Details: port_scanning
+2025-11-07 20:55:19 - firewall - INFO - Firewall alert - IP: 192.168.1.32, Status: SUCCESS, Details: port_scanning
+2025-11-07 20:55:19 - firewall - INFO - Firewall log - IP: 192.168.1.32, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 96, 'is_attack': True}
+2025-11-07 20:55:19 - firewall - INFO - Firewall log - IP: 192.168.1.32, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 185, 'is_attack': True}
+2025-11-07 20:55:19 - firewall - INFO - Firewall log - IP: 192.168.1.32, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 115, 'is_attack': True}
+2025-11-07 20:55:19 - firewall - INFO - Simulated blocking IP 192.168.1.32: Agent blocked port_scanning
+2025-11-07 20:55:19 - firewall - INFO - Firewall block - IP: 192.168.1.32, Status: SUCCESS, Details: Agent blocked port_scanning
+2025-11-07 20:55:19 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:26 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:55:26 - firewall - INFO - Simulated blocking IP 192.168.1.18: Agent blocked normal
+2025-11-07 20:55:26 - firewall - INFO - Firewall block - IP: 192.168.1.18, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:55:26 - firewall - INFO - Firewall alert - IP: 192.168.1.20, Status: SUCCESS, Details: brute_force
+2025-11-07 20:55:26 - firewall - INFO - Firewall log - IP: 192.168.1.20, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 11, 'is_attack': True}
+2025-11-07 20:55:26 - firewall - INFO - Firewall log - IP: 192.168.1.20, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 11, 'is_attack': True}
+2025-11-07 20:55:26 - firewall - INFO - Firewall log - IP: 192.168.1.20, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 10, 'is_attack': True}
+2025-11-07 20:55:26 - firewall - INFO - Simulated blocking IP 192.168.1.20: Agent blocked brute_force
+2025-11-07 20:55:26 - firewall - INFO - Firewall block - IP: 192.168.1.20, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:56:06 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.10, Status: SUCCESS, Details: brute_force
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.10, Status: SUCCESS, Details: brute_force
+2025-11-07 20:56:06 - firewall - INFO - Firewall log - IP: 192.168.1.10, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 10, 'is_attack': True}
+2025-11-07 20:56:06 - firewall - INFO - Firewall log - IP: 192.168.1.10, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 10, 'is_attack': True}
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.10, Status: SUCCESS, Details: brute_force
+2025-11-07 20:56:06 - firewall - INFO - Firewall log - IP: 192.168.1.10, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 11, 'is_attack': True}
+2025-11-07 20:56:06 - firewall - INFO - Firewall log - IP: 192.168.1.10, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 11, 'is_attack': True}
+2025-11-07 20:56:06 - firewall - INFO - Simulated blocking IP 192.168.1.23: Agent blocked normal
+2025-11-07 20:56:06 - firewall - INFO - Firewall block - IP: 192.168.1.23, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:56:06 - firewall - INFO - Simulated blocking IP 192.168.1.4: Agent blocked normal
+2025-11-07 20:56:06 - firewall - INFO - Firewall block - IP: 192.168.1.4, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:56:06 - firewall - INFO - Firewall log - IP: 192.168.1.21, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 32, 'is_attack': True}
+2025-11-07 20:56:06 - firewall - INFO - Simulated blocking IP 192.168.1.21: Agent blocked xss
+2025-11-07 20:56:06 - firewall - INFO - Firewall block - IP: 192.168.1.21, Status: SUCCESS, Details: Agent blocked xss
+2025-11-07 20:56:06 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.20, Status: SUCCESS, Details: suspicious
+2025-11-07 20:56:06 - firewall - INFO - Simulated blocking IP 192.168.1.13: Agent blocked brute_force
+2025-11-07 20:56:06 - firewall - INFO - Firewall block - IP: 192.168.1.13, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:56:06 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.26, Status: SUCCESS, Details: brute_force
+2025-11-07 20:56:06 - firewall - INFO - Simulated blocking IP 192.168.1.26: Agent blocked brute_force
+2025-11-07 20:56:06 - firewall - INFO - Firewall block - IP: 192.168.1.26, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:56:06 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.37, Status: SUCCESS, Details: command_injection
+2025-11-07 20:56:06 - firewall - INFO - Simulated blocking IP 192.168.1.37: Agent blocked command_injection
+2025-11-07 20:56:06 - firewall - INFO - Firewall block - IP: 192.168.1.37, Status: SUCCESS, Details: Agent blocked command_injection
+2025-11-07 20:56:06 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.50, Status: SUCCESS, Details: sql_injection
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.50, Status: SUCCESS, Details: sql_injection
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.50, Status: SUCCESS, Details: sql_injection
+2025-11-07 20:56:06 - firewall - INFO - Firewall log - IP: 192.168.1.14, Status: SUCCESS, Details: {'endpoint': '/api/data', 'method': 'PUT', 'payload_type': 'normal', 'payload_size': 1864, 'is_attack': False}
+2025-11-07 20:56:06 - firewall - INFO - Firewall alert - IP: 192.168.1.28, Status: SUCCESS, Details: suspicious
+2025-11-07 20:56:06 - firewall - INFO - Firewall log - IP: 192.168.1.40, Status: SUCCESS, Details: {'endpoint': '/dashboard', 'method': 'DELETE', 'payload_type': 'normal', 'payload_size': 1095, 'is_attack': False}
+2025-11-07 20:56:06 - firewall - INFO - Simulated blocking IP 192.168.1.28: Agent blocked brute_force
+2025-11-07 20:56:06 - firewall - INFO - Firewall block - IP: 192.168.1.28, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:56:06 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Firewall alert - IP: 192.168.1.33, Status: SUCCESS, Details: brute_force
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.33, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 12, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.33, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 13, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Firewall alert - IP: 192.168.1.33, Status: SUCCESS, Details: brute_force
+2025-11-07 20:57:49 - firewall - INFO - Firewall alert - IP: 192.168.1.33, Status: SUCCESS, Details: brute_force
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.33: Agent blocked brute_force
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.33, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.21: Agent blocked normal
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.21, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.7, Status: SUCCESS, Details: {'endpoint': '/admin/command', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 17, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.7, Status: SUCCESS, Details: {'endpoint': '/admin/command', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 11, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.7: Agent blocked command_injection
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.7, Status: SUCCESS, Details: Agent blocked command_injection
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.45, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 32, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Firewall alert - IP: 192.168.1.45, Status: SUCCESS, Details: xss
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.45, Status: SUCCESS, Details: {'endpoint': '/profile', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 32, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.44, Status: SUCCESS, Details: {'endpoint': '/search', 'method': 'HEAD', 'payload_type': 'normal', 'payload_size': 54, 'is_attack': False}
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.34, Status: SUCCESS, Details: {'endpoint': '/api/document?file=../../../etc/passwd', 'method': 'GET', 'payload_type': 'path_traversal', 'payload_size': 19, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.34: Agent blocked path_traversal
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.34, Status: SUCCESS, Details: Agent blocked path_traversal
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Firewall alert - IP: 192.168.1.24, Status: SUCCESS, Details: suspicious
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.8: Agent blocked xss
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.8, Status: SUCCESS, Details: Agent blocked xss
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Firewall alert - IP: 192.168.1.1, Status: SUCCESS, Details: suspicious
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.4: Agent blocked command_injection
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.4, Status: SUCCESS, Details: Agent blocked command_injection
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Firewall alert - IP: 192.168.1.39, Status: SUCCESS, Details: suspicious
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.47, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 98, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.47, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 74, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.47, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 141, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.47: Agent blocked port_scanning
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.47, Status: SUCCESS, Details: Agent blocked port_scanning
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.37: Agent blocked brute_force
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.37, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.6, Status: SUCCESS, Details: {'endpoint': '/dashboard', 'method': 'GET', 'payload_type': 'ddos', 'payload_size': 295, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.41, Status: SUCCESS, Details: {'endpoint': '/api/data', 'method': 'GET', 'payload_type': 'ddos', 'payload_size': 436, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.5: Agent blocked ddos
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.5, Status: SUCCESS, Details: Agent blocked ddos
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Simulated blocking IP 192.168.1.18: Agent blocked ddos
+2025-11-07 20:57:49 - firewall - INFO - Firewall block - IP: 192.168.1.18, Status: SUCCESS, Details: Agent blocked ddos
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:57:49 - firewall - INFO - Firewall log - IP: 192.168.1.42, Status: SUCCESS, Details: {'endpoint': '/search', 'method': 'POST', 'payload_type': 'sql_injection', 'payload_size': 8, 'is_attack': True}
+2025-11-07 20:57:49 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Simulated blocking IP 192.168.1.27: Agent blocked normal
+2025-11-07 20:58:00 - firewall - INFO - Firewall block - IP: 192.168.1.27, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Firewall alert - IP: 192.168.1.33, Status: SUCCESS, Details: brute_force
+2025-11-07 20:58:00 - firewall - INFO - Simulated blocking IP 192.168.1.33: Agent blocked brute_force
+2025-11-07 20:58:00 - firewall - INFO - Firewall block - IP: 192.168.1.33, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Firewall log - IP: 192.168.1.15, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 181, 'is_attack': True}
+2025-11-07 20:58:00 - firewall - INFO - Firewall alert - IP: 192.168.1.15, Status: SUCCESS, Details: port_scanning
+2025-11-07 20:58:00 - firewall - INFO - Firewall alert - IP: 192.168.1.15, Status: SUCCESS, Details: port_scanning
+2025-11-07 20:58:00 - firewall - INFO - Firewall log - IP: 192.168.1.15, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 149, 'is_attack': True}
+2025-11-07 20:58:00 - firewall - INFO - Simulated blocking IP 192.168.1.15: Agent blocked port_scanning
+2025-11-07 20:58:00 - firewall - INFO - Firewall block - IP: 192.168.1.15, Status: SUCCESS, Details: Agent blocked port_scanning
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:00 - firewall - INFO - Simulated blocking IP 192.168.1.45: Agent blocked brute_force
+2025-11-07 20:58:00 - firewall - INFO - Firewall block - IP: 192.168.1.45, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 20:58:00 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:37 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 20:58:37 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:09:45 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.48, Status: SUCCESS, Details: xss
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.48, Status: SUCCESS, Details: {'endpoint': '/dashboard', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 32, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.48, Status: SUCCESS, Details: {'endpoint': '/profile', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 26, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.24, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'POST', 'payload_type': 'normal', 'payload_size': 1674, 'is_attack': False}
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.36, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.9, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.49, Status: SUCCESS, Details: xss
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.49, Status: SUCCESS, Details: {'endpoint': '/search', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 26, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.49: Agent blocked xss
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.49, Status: SUCCESS, Details: Agent blocked xss
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.24, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.5, Status: SUCCESS, Details: csrf
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.5, Status: SUCCESS, Details: csrf
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.5, Status: SUCCESS, Details: {'endpoint': '/user/settings', 'method': 'POST', 'payload_type': 'csrf', 'payload_size': 25, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.2, Status: SUCCESS, Details: {'endpoint': '/admin', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 25, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.2, Status: SUCCESS, Details: {'endpoint': '/api/data', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 26, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.2: Agent blocked xss
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.2, Status: SUCCESS, Details: Agent blocked xss
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.9, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.13, Status: SUCCESS, Details: {'endpoint': '/api/users', 'method': 'PUT', 'payload_type': 'normal', 'payload_size': 1186, 'is_attack': False}
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.9, Status: SUCCESS, Details: command_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.9, Status: SUCCESS, Details: {'endpoint': '/api/execute', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 11, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.9, Status: SUCCESS, Details: {'endpoint': '/api/run', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 11, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.9, Status: SUCCESS, Details: {'endpoint': '/api/execute', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 8, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.29: Agent blocked normal
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.29, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.34, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.20: Agent blocked path_traversal
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.20, Status: SUCCESS, Details: Agent blocked path_traversal
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.43, Status: SUCCESS, Details: xss
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.43: Agent blocked xss
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.43, Status: SUCCESS, Details: Agent blocked xss
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.9: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.9, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.45, Status: SUCCESS, Details: {'endpoint': '/login?reset-password?token=fake', 'method': 'GET', 'payload_type': 'phishing', 'payload_size': 25, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.45, Status: SUCCESS, Details: phishing
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.45, Status: SUCCESS, Details: phishing
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.45, Status: SUCCESS, Details: {'endpoint': '/verify?verify-account?id=stolen', 'method': 'GET', 'payload_type': 'phishing', 'payload_size': 24, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.48, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 74, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.48, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 111, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.48, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 92, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.48: Agent blocked port_scanning
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.48, Status: SUCCESS, Details: Agent blocked port_scanning
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.47, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.37: Agent blocked normal
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.37, Status: SUCCESS, Details: Agent blocked normal
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.40, Status: SUCCESS, Details: sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.40: Agent blocked sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.40, Status: SUCCESS, Details: Agent blocked sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.31, Status: SUCCESS, Details: path_traversal
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.31, Status: SUCCESS, Details: path_traversal
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.31, Status: SUCCESS, Details: path_traversal
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.31, Status: SUCCESS, Details: path_traversal
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.31, Status: SUCCESS, Details: path_traversal
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.31, Status: SUCCESS, Details: path_traversal
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.5, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.1, Status: SUCCESS, Details: port_scanning
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.1, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'GET', 'payload_type': 'port_scanning', 'payload_size': 56, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.1: Agent blocked port_scanning
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.1, Status: SUCCESS, Details: Agent blocked port_scanning
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.45: Agent blocked command_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.45, Status: SUCCESS, Details: Agent blocked command_injection
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.22: Agent blocked sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.22, Status: SUCCESS, Details: Agent blocked sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.35, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'HEAD', 'payload_type': 'normal', 'payload_size': 1413, 'is_attack': False}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.17, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 12, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.17, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 11, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.17, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 11, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.17, Status: SUCCESS, Details: brute_force
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.17: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.17, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.15: Agent blocked sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.15, Status: SUCCESS, Details: Agent blocked sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.50, Status: SUCCESS, Details: {'endpoint': '/api/users', 'method': 'GET', 'payload_type': 'ddos', 'payload_size': 300, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.24, Status: SUCCESS, Details: {'endpoint': '/search', 'method': 'GET', 'payload_type': 'ddos', 'payload_size': 297, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.5: Agent blocked ddos
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.5, Status: SUCCESS, Details: Agent blocked ddos
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.1, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.50, Status: SUCCESS, Details: {'endpoint': '/dashboard', 'method': 'PUT', 'payload_type': 'normal', 'payload_size': 1348, 'is_attack': False}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.35: Agent blocked sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.35, Status: SUCCESS, Details: Agent blocked sql_injection
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.25, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.13, Status: SUCCESS, Details: brute_force
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.13: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.13, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.30, Status: SUCCESS, Details: command_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.30, Status: SUCCESS, Details: command_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.30, Status: SUCCESS, Details: {'endpoint': '/api/system', 'method': 'POST', 'payload_type': 'command_injection', 'payload_size': 11, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.1, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 10, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.1: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.1, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.22, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.47, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'normal', 'payload_size': 926, 'is_attack': False}
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.10, Status: SUCCESS, Details: suspicious
+2025-11-07 21:10:11 - firewall - INFO - Firewall alert - IP: 192.168.1.42, Status: SUCCESS, Details: brute_force
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.42, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 11, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.42, Status: SUCCESS, Details: {'endpoint': '/login', 'method': 'POST', 'payload_type': 'brute_force', 'payload_size': 13, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.42: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.42, Status: SUCCESS, Details: Agent blocked brute_force
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.30: Agent blocked command_injection
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.30, Status: SUCCESS, Details: Agent blocked command_injection
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Firewall log - IP: 192.168.1.30, Status: SUCCESS, Details: {'endpoint': '/', 'method': 'POST', 'payload_type': 'xss', 'payload_size': 32, 'is_attack': True}
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.30: Agent blocked xss
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.30, Status: SUCCESS, Details: Agent blocked xss
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:10:11 - firewall - INFO - Simulated blocking IP 192.168.1.7: Agent blocked phishing
+2025-11-07 21:10:11 - firewall - INFO - Firewall block - IP: 192.168.1.7, Status: SUCCESS, Details: Agent blocked phishing
+2025-11-07 21:10:11 - firewall - INFO - Reset firewall (simulation mode)
+2025-11-07 21:11:25 - firewall - INFO - Reset firewall (simulation mode)

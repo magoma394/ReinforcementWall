@@ -17,6 +17,7 @@ from reinforcewall.utils import (
     encode_payload_type,
     encode_http_method,
     calculate_request_frequency,
+    get_max_attack_types,
 )
 
 
@@ -26,7 +27,9 @@ class NetworkRequest:
     
     ip_address: str
     timestamp: float
-    payload_type: str  # "normal", "sql_injection", "xss", "brute_force"
+    payload_type: str  # "normal", "sql_injection", "xss", "brute_force", "ddos", 
+                       # "command_injection", "path_traversal", "port_scanning",
+                       # "csrf", "mitm", "phishing"
     http_method: str
     payload_size: int
     endpoint: str
@@ -87,7 +90,8 @@ class StateExtractor:
         
         # 2. Payload type (encoded)
         payload_type_encoded = encode_payload_type(current_request.payload_type)
-        features.append(payload_type_encoded / 3.0)  # Normalize to [0, 1]
+        max_attack_types = get_max_attack_types()
+        features.append(payload_type_encoded / max_attack_types)  # Normalize to [0, 1]
         
         # 3. IP address (normalized hash)
         ip_numeric = ip_to_numeric(current_request.ip_address)
@@ -345,7 +349,8 @@ class StateExtractor:
         if total == 0:
             return 0.0
         
-        diversity = len(attack_types) / 3.0  # Normalize by max attack types
+        max_attack_types = get_max_attack_types()
+        diversity = len(attack_types) / max_attack_types  # Normalize by max attack types
         return min(diversity, 1.0)
     
     def reset(self):

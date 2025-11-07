@@ -4,18 +4,19 @@ A Reinforcement Learning-based Network Defense System for detecting and respondi
 
 ## Overview
 
-ReinforceWall is an educational project that demonstrates how Reinforcement Learning (specifically Deep Q-Learning) can be used to train an intelligent agent to detect and respond to network attacks. The system simulates network traffic patterns and various attack scenarios (SQL Injection, XSS, Brute Force) while training an RL agent to make optimal defensive decisions.
+ReinforceWall is an educational project that demonstrates how Reinforcement Learning (specifically Deep Q-Learning) can be used to train an intelligent agent to detect and respond to network attacks. The system simulates network traffic patterns and various attack scenarios (SQL Injection, XSS, Brute Force, DDoS, Command Injection, Path Traversal, Port Scanning, CSRF, MITM, Phishing) while training an RL agent to make optimal defensive decisions.
 
 ## Features
 
 - **Custom RL Environment**: Gymnasium-compatible environment for network defense scenarios
-- **Attack Simulation**: Realistic simulation of SQL Injection, XSS, and Brute Force attacks
+- **Attack Simulation**: Realistic simulation of 10 attack types (SQL Injection, XSS, Brute Force, DDoS, Command Injection, Path Traversal, Port Scanning, CSRF, MITM, Phishing)
 - **Firewall Integration**: Supports both simulation mode (safe for demos) and real iptables integration
 - **State Representation**: 15-dimensional feature vector capturing network behavior patterns
 - **Action Space**: 4 defensive actions (Block, Alert, Log, Ignore)
 - **Reward System**: Balanced reward structure encouraging accurate attack detection
 - **Metrics Tracking**: Comprehensive metrics for training analysis and evaluation
 - **Baseline Detection**: Rule-based attack detector for comparison
+- **Extensible Architecture**: Easy to add new attack types via configuration
 
 ## Project Structure
 
@@ -62,6 +63,42 @@ pip install -r requirements.txt
 ```
 
 ## Quick Start
+
+### Training a DQN Agent
+
+Train an RL agent to learn optimal defense strategies:
+
+```bash
+# Train agent for 1000 episodes
+python3 train_agent.py --episodes 1000
+
+# Train with custom parameters
+python3 train_agent.py --episodes 2000 --max-steps 200 --save-freq 100
+```
+
+### Evaluating a Trained Agent
+
+Evaluate a trained model:
+
+```bash
+# Evaluate trained agent
+python3 evaluate_agent.py models/checkpoints/best_model.pth --episodes 100
+
+# Compare with baseline
+python3 evaluate_agent.py models/checkpoints/final_model.pth --episodes 100
+```
+
+### Running the Dashboard
+
+Start the Flask dashboard for real-time visualization:
+
+```bash
+# Start dashboard
+cd dashboard
+python3 app.py
+
+# Access at http://localhost:5000
+```
 
 ### Basic Environment Usage
 
@@ -171,11 +208,18 @@ Discrete actions:
 
 ## Attack Types
 
-The simulator generates three types of attacks:
+The simulator generates ten types of attacks:
 
-1. **SQL Injection**: Attempts to inject malicious SQL queries
-2. **XSS (Cross-Site Scripting)**: Attempts to inject malicious scripts
+1. **SQL Injection**: Attempts to inject malicious SQL queries into application inputs
+2. **XSS (Cross-Site Scripting)**: Attempts to inject malicious scripts into web pages
 3. **Brute Force**: Repeated login attempts to gain unauthorized access
+4. **DDoS (Distributed Denial of Service)**: High-volume requests from multiple IP addresses to overwhelm the system
+5. **Command Injection**: Attempts to execute system commands through application inputs
+6. **Path Traversal**: Attempts to access files outside the intended directory by manipulating file paths
+7. **Port Scanning**: Sequential requests to different ports/endpoints to discover open services
+8. **CSRF (Cross-Site Request Forgery)**: Forged requests from trusted users to perform unauthorized actions
+9. **MITM (Man-in-the-Middle)**: Intercepted and modified communications through proxy headers
+10. **Phishing**: Deceptive requests with suspicious redirects and fake referers
 
 ## Safety Features
 
@@ -185,12 +229,14 @@ The simulator generates three types of attacks:
 
 ## Future Enhancements
 
-- [ ] Deep Q-Network (DQN) agent implementation
-- [ ] Flask dashboard for real-time visualization
-- [ ] Support for additional attack types
+- [x] Deep Q-Network (DQN) agent implementation
+- [x] Flask dashboard for real-time visualization
+- [x] Support for additional attack types (CSRF, MITM, Phishing)
 - [ ] Multi-agent reinforcement learning
 - [ ] Transfer learning from baseline detector
 - [ ] Advanced state representations (LSTM, attention mechanisms)
+- [ ] Dynamic attack pattern generation
+- [ ] Real-time network traffic integration
 
 ## Testing
 

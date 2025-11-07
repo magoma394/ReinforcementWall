@@ -75,18 +75,37 @@ def encode_payload_type(payload_type: str) -> int:
     Encode payload type to integer.
     
     Args:
-        payload_type: Type of payload ("normal", "sql_injection", "xss", "brute_force")
+        payload_type: Type of payload ("normal", "sql_injection", "xss", "brute_force",
+                      "ddos", "command_injection", "path_traversal", "port_scanning")
     
     Returns:
-        Encoded integer (0=normal, 1=SQL, 2=XSS, 3=brute_force)
+        Encoded integer (0=normal, 1=SQL, 2=XSS, 3=brute_force, 4=ddos,
+                         5=command_injection, 6=path_traversal, 7=port_scanning)
     """
     encoding = {
         "normal": 0,
         "sql_injection": 1,
         "xss": 2,
         "brute_force": 3,
+        "ddos": 4,
+        "command_injection": 5,
+        "path_traversal": 6,
+        "port_scanning": 7,
+        "csrf": 8,
+        "mitm": 9,
+        "phishing": 10,
     }
     return encoding.get(payload_type.lower(), 0)
+
+
+def get_max_attack_types() -> int:
+    """
+    Get the maximum number of attack types (excluding normal).
+    
+    Returns:
+        Maximum number of attack types
+    """
+    return 10  # Current: SQL, XSS, Brute Force, DDoS, Command Injection, Path Traversal, Port Scanning, CSRF, MITM, Phishing
 
 
 def encode_http_method(method: str) -> int:

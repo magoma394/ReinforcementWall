@@ -1,0 +1,159 @@
+[2025-11-07T20:25:00.567136] ALERT - IP: 192.168.1.23, Attack Type: path_traversal, Details: {'endpoint': '/api/files?file=../../../../windows/win.ini', 'method': 'GET', 'payload_size': 27}
+[2025-11-07T20:25:00.568315] ALERT - IP: 192.168.1.23, Attack Type: path_traversal, Details: {'endpoint': '/download?file=../../../etc/passwd', 'method': 'GET', 'payload_size': 19}
+[2025-11-07T20:25:00.568754] ALERT - IP: 192.168.1.23, Attack Type: path_traversal, Details: {'endpoint': '/read?file=....//....//windows/system32/config/sam', 'method': 'GET', 'payload_size': 39}
+[2025-11-07T20:25:00.569345] ALERT - IP: 192.168.1.23, Attack Type: path_traversal, Details: {'endpoint': '/file?file=%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd', 'method': 'GET', 'payload_size': 39}
+[2025-11-07T20:25:00.570189] ALERT - IP: 192.168.1.21, Attack Type: command_injection, Details: {'endpoint': '/admin/command', 'method': 'POST', 'payload_size': 8}
+[2025-11-07T20:25:00.570618] ALERT - IP: 192.168.1.21, Attack Type: command_injection, Details: {'endpoint': '/admin/command', 'method': 'POST', 'payload_size': 4}
+[2025-11-07T20:25:00.571086] BLOCKED (SIMULATION) - IP: 192.168.1.21, Reason: Agent blocked command_injection
+[2025-11-07T20:53:51.379685] BLOCKED (SIMULATION) - IP: 192.168.1.10, Reason: Agent blocked brute_force
+[2025-11-07T20:55:03.620481] BLOCKED (SIMULATION) - IP: 192.168.1.20, Reason: Agent blocked normal
+[2025-11-07T20:55:03.621239] BLOCKED (SIMULATION) - IP: 192.168.1.21, Reason: Agent blocked sql_injection
+[2025-11-07T20:55:03.621886] ALERT - IP: 192.168.1.26, Attack Type: suspicious, Details: {'endpoint': '/api/data', 'method': 'GET', 'payload_size': 1060}
+[2025-11-07T20:55:03.622491] BLOCKED (SIMULATION) - IP: 192.168.1.49, Reason: Agent blocked ddos
+[2025-11-07T20:55:03.623809] BLOCKED (SIMULATION) - IP: 192.168.1.5, Reason: Agent blocked path_traversal
+[2025-11-07T20:55:03.624760] ALERT - IP: 192.168.1.44, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:55:03.625163] ALERT - IP: 192.168.1.44, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 14}
+[2025-11-07T20:55:03.625551] ALERT - IP: 192.168.1.44, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:55:03.625943] ALERT - IP: 192.168.1.44, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:55:03.626294] ALERT - IP: 192.168.1.44, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:55:03.626972] ALERT - IP: 192.168.1.44, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 10}
+[2025-11-07T20:55:03.627802] BLOCKED (SIMULATION) - IP: 192.168.1.20, Reason: Agent blocked brute_force
+[2025-11-07T20:55:03.628313] ALERT - IP: 192.168.1.34, Attack Type: suspicious, Details: {'endpoint': '/profile', 'method': 'POST', 'payload_size': 1020}
+[2025-11-07T20:55:03.628666] ALERT - IP: 192.168.1.49, Attack Type: suspicious, Details: {'endpoint': '/search', 'method': 'DELETE', 'payload_size': 1391}
+[2025-11-07T20:55:03.629094] ALERT - IP: 192.168.1.34, Attack Type: xss, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 23}
+[2025-11-07T20:55:03.631710] BLOCKED (SIMULATION) - IP: 192.168.1.41, Reason: Agent blocked brute_force
+[2025-11-07T20:55:03.632594] ALERT - IP: 192.168.1.28, Attack Type: command_injection, Details: {'endpoint': '/api/system', 'method': 'POST', 'payload_size': 15}
+[2025-11-07T20:55:03.633731] ALERT - IP: 192.168.1.28, Attack Type: command_injection, Details: {'endpoint': '/api/execute', 'method': 'POST', 'payload_size': 15}
+[2025-11-07T20:55:03.634132] ALERT - IP: 192.168.1.22, Attack Type: path_traversal, Details: {'endpoint': '/file?file=..\\..\\..\\windows\\system32\\config\\sam', 'method': 'GET', 'payload_size': 36}
+[2025-11-07T20:55:03.634495] BLOCKED (SIMULATION) - IP: 192.168.1.22, Reason: Agent blocked path_traversal
+[2025-11-07T20:55:03.634932] ALERT - IP: 192.168.1.36, Attack Type: path_traversal, Details: {'endpoint': '/read?file=../../../etc/passwd', 'method': 'GET', 'payload_size': 19}
+[2025-11-07T20:55:03.635333] ALERT - IP: 192.168.1.36, Attack Type: path_traversal, Details: {'endpoint': '/api/document?file=....//....//windows/system32/config/sam', 'method': 'GET', 'payload_size': 39}
+[2025-11-07T20:55:03.635703] BLOCKED (SIMULATION) - IP: 192.168.1.36, Reason: Agent blocked path_traversal
+[2025-11-07T20:55:03.636142] ALERT - IP: 192.168.1.29, Attack Type: xss, Details: {'endpoint': '/api/data', 'method': 'POST', 'payload_size': 23}
+[2025-11-07T20:55:03.636610] BLOCKED (SIMULATION) - IP: 192.168.1.29, Reason: Agent blocked xss
+[2025-11-07T20:55:03.637129] BLOCKED (SIMULATION) - IP: 192.168.1.35, Reason: Agent blocked normal
+[2025-11-07T20:55:03.637591] BLOCKED (SIMULATION) - IP: 192.168.1.49, Reason: Agent blocked sql_injection
+[2025-11-07T20:55:03.638264] ALERT - IP: 192.168.1.8, Attack Type: ddos, Details: {'endpoint': '/profile', 'method': 'GET', 'payload_size': 205}
+[2025-11-07T20:55:03.638813] BLOCKED (SIMULATION) - IP: 192.168.1.32, Reason: Agent blocked ddos
+[2025-11-07T20:55:19.534013] BLOCKED (SIMULATION) - IP: 192.168.1.7, Reason: Agent blocked normal
+[2025-11-07T20:55:19.534614] BLOCKED (SIMULATION) - IP: 192.168.1.39, Reason: Agent blocked sql_injection
+[2025-11-07T20:55:19.535047] ALERT - IP: 192.168.1.35, Attack Type: command_injection, Details: {'endpoint': '/admin/command', 'method': 'POST', 'payload_size': 8}
+[2025-11-07T20:55:19.535760] ALERT - IP: 192.168.1.35, Attack Type: command_injection, Details: {'endpoint': '/api/system', 'method': 'POST', 'payload_size': 8}
+[2025-11-07T20:55:19.536554] BLOCKED (SIMULATION) - IP: 192.168.1.18, Reason: Agent blocked brute_force
+[2025-11-07T20:55:19.537522] BLOCKED (SIMULATION) - IP: 192.168.1.4, Reason: Agent blocked xss
+[2025-11-07T20:55:19.537933] ALERT - IP: 192.168.1.34, Attack Type: path_traversal, Details: {'endpoint': '/download?file=....//....//etc/passwd', 'method': 'GET', 'payload_size': 22}
+[2025-11-07T20:55:19.538453] ALERT - IP: 192.168.1.34, Attack Type: path_traversal, Details: {'endpoint': '/api/files?file=..%2F..%2F..%2Fetc%2Fpasswd', 'method': 'GET', 'payload_size': 27}
+[2025-11-07T20:55:19.538841] BLOCKED (SIMULATION) - IP: 192.168.1.34, Reason: Agent blocked path_traversal
+[2025-11-07T20:55:19.539797] BLOCKED (SIMULATION) - IP: 192.168.1.36, Reason: Agent blocked port_scanning
+[2025-11-07T20:55:19.540248] BLOCKED (SIMULATION) - IP: 192.168.1.49, Reason: Agent blocked sql_injection
+[2025-11-07T20:55:19.540654] BLOCKED (SIMULATION) - IP: 192.168.1.45, Reason: Agent blocked normal
+[2025-11-07T20:55:19.541021] ALERT - IP: 192.168.1.17, Attack Type: ddos, Details: {'endpoint': '/admin', 'method': 'GET', 'payload_size': 167}
+[2025-11-07T20:55:19.541601] ALERT - IP: 192.168.1.18, Attack Type: ddos, Details: {'endpoint': '/dashboard', 'method': 'GET', 'payload_size': 363}
+[2025-11-07T20:55:19.541932] ALERT - IP: 192.168.1.31, Attack Type: ddos, Details: {'endpoint': '/', 'method': 'GET', 'payload_size': 127}
+[2025-11-07T20:55:19.542295] ALERT - IP: 192.168.1.36, Attack Type: ddos, Details: {'endpoint': '/api/data', 'method': 'GET', 'payload_size': 114}
+[2025-11-07T20:55:19.542628] ALERT - IP: 192.168.1.49, Attack Type: ddos, Details: {'endpoint': '/profile', 'method': 'GET', 'payload_size': 376}
+[2025-11-07T20:55:19.543002] ALERT - IP: 192.168.1.24, Attack Type: ddos, Details: {'endpoint': '/', 'method': 'GET', 'payload_size': 435}
+[2025-11-07T20:55:19.543430] BLOCKED (SIMULATION) - IP: 192.168.1.35, Reason: Agent blocked ddos
+[2025-11-07T20:55:19.543970] BLOCKED (SIMULATION) - IP: 192.168.1.11, Reason: Agent blocked brute_force
+[2025-11-07T20:55:19.544524] BLOCKED (SIMULATION) - IP: 192.168.1.42, Reason: Agent blocked path_traversal
+[2025-11-07T20:55:19.545104] ALERT - IP: 192.168.1.32, Attack Type: port_scanning, Details: {'endpoint': '/', 'method': 'GET', 'payload_size': 140}
+[2025-11-07T20:55:19.545653] ALERT - IP: 192.168.1.32, Attack Type: port_scanning, Details: {'endpoint': '/', 'method': 'GET', 'payload_size': 79}
+[2025-11-07T20:55:19.547300] BLOCKED (SIMULATION) - IP: 192.168.1.32, Reason: Agent blocked port_scanning
+[2025-11-07T20:55:26.530756] BLOCKED (SIMULATION) - IP: 192.168.1.18, Reason: Agent blocked normal
+[2025-11-07T20:55:26.531442] ALERT - IP: 192.168.1.20, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:55:26.532712] BLOCKED (SIMULATION) - IP: 192.168.1.20, Reason: Agent blocked brute_force
+[2025-11-07T20:56:06.449372] ALERT - IP: 192.168.1.10, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 12}
+[2025-11-07T20:56:06.449792] ALERT - IP: 192.168.1.10, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 10}
+[2025-11-07T20:56:06.451311] ALERT - IP: 192.168.1.10, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:56:06.452257] BLOCKED (SIMULATION) - IP: 192.168.1.23, Reason: Agent blocked normal
+[2025-11-07T20:56:06.452688] BLOCKED (SIMULATION) - IP: 192.168.1.4, Reason: Agent blocked normal
+[2025-11-07T20:56:06.453376] BLOCKED (SIMULATION) - IP: 192.168.1.21, Reason: Agent blocked xss
+[2025-11-07T20:56:06.453898] ALERT - IP: 192.168.1.20, Attack Type: suspicious, Details: {'endpoint': '/dashboard', 'method': 'DELETE', 'payload_size': 1554}
+[2025-11-07T20:56:06.454372] BLOCKED (SIMULATION) - IP: 192.168.1.13, Reason: Agent blocked brute_force
+[2025-11-07T20:56:06.454837] ALERT - IP: 192.168.1.26, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:56:06.455113] BLOCKED (SIMULATION) - IP: 192.168.1.26, Reason: Agent blocked brute_force
+[2025-11-07T20:56:06.455763] ALERT - IP: 192.168.1.37, Attack Type: command_injection, Details: {'endpoint': '/api/system', 'method': 'POST', 'payload_size': 17}
+[2025-11-07T20:56:06.456055] BLOCKED (SIMULATION) - IP: 192.168.1.37, Reason: Agent blocked command_injection
+[2025-11-07T20:56:06.456674] ALERT - IP: 192.168.1.50, Attack Type: sql_injection, Details: {'endpoint': '/search', 'method': 'POST', 'payload_size': 10}
+[2025-11-07T20:56:06.457483] ALERT - IP: 192.168.1.50, Attack Type: sql_injection, Details: {'endpoint': '/api/users', 'method': 'POST', 'payload_size': 8}
+[2025-11-07T20:56:06.457837] ALERT - IP: 192.168.1.50, Attack Type: sql_injection, Details: {'endpoint': '/api/users', 'method': 'POST', 'payload_size': 22}
+[2025-11-07T20:56:06.458646] ALERT - IP: 192.168.1.28, Attack Type: suspicious, Details: {'endpoint': '/login', 'method': 'PUT', 'payload_size': 249}
+[2025-11-07T20:56:06.459521] BLOCKED (SIMULATION) - IP: 192.168.1.28, Reason: Agent blocked brute_force
+[2025-11-07T20:57:49.750546] ALERT - IP: 192.168.1.33, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 13}
+[2025-11-07T20:57:49.752136] ALERT - IP: 192.168.1.33, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:57:49.752577] ALERT - IP: 192.168.1.33, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:57:49.753333] BLOCKED (SIMULATION) - IP: 192.168.1.33, Reason: Agent blocked brute_force
+[2025-11-07T20:57:49.754017] BLOCKED (SIMULATION) - IP: 192.168.1.21, Reason: Agent blocked normal
+[2025-11-07T20:57:49.755196] BLOCKED (SIMULATION) - IP: 192.168.1.7, Reason: Agent blocked command_injection
+[2025-11-07T20:57:49.755948] ALERT - IP: 192.168.1.45, Attack Type: xss, Details: {'endpoint': '/api/data', 'method': 'POST', 'payload_size': 32}
+[2025-11-07T20:57:49.757217] BLOCKED (SIMULATION) - IP: 192.168.1.34, Reason: Agent blocked path_traversal
+[2025-11-07T20:57:49.757663] ALERT - IP: 192.168.1.24, Attack Type: suspicious, Details: {'endpoint': '/dashboard', 'method': 'POST', 'payload_size': 637}
+[2025-11-07T20:57:49.758304] BLOCKED (SIMULATION) - IP: 192.168.1.8, Reason: Agent blocked xss
+[2025-11-07T20:57:49.758864] ALERT - IP: 192.168.1.1, Attack Type: suspicious, Details: {'endpoint': '/api/data', 'method': 'DELETE', 'payload_size': 918}
+[2025-11-07T20:57:49.759396] BLOCKED (SIMULATION) - IP: 192.168.1.4, Reason: Agent blocked command_injection
+[2025-11-07T20:57:49.759939] ALERT - IP: 192.168.1.39, Attack Type: suspicious, Details: {'endpoint': '/', 'method': 'PUT', 'payload_size': 1919}
+[2025-11-07T20:57:49.762159] BLOCKED (SIMULATION) - IP: 192.168.1.47, Reason: Agent blocked port_scanning
+[2025-11-07T20:57:49.762609] BLOCKED (SIMULATION) - IP: 192.168.1.37, Reason: Agent blocked brute_force
+[2025-11-07T20:57:49.763757] BLOCKED (SIMULATION) - IP: 192.168.1.5, Reason: Agent blocked ddos
+[2025-11-07T20:57:49.764276] BLOCKED (SIMULATION) - IP: 192.168.1.18, Reason: Agent blocked ddos
+[2025-11-07T20:58:00.066595] BLOCKED (SIMULATION) - IP: 192.168.1.27, Reason: Agent blocked normal
+[2025-11-07T20:58:00.068518] ALERT - IP: 192.168.1.33, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T20:58:00.068970] BLOCKED (SIMULATION) - IP: 192.168.1.33, Reason: Agent blocked brute_force
+[2025-11-07T20:58:00.073988] ALERT - IP: 192.168.1.15, Attack Type: port_scanning, Details: {'endpoint': '/', 'method': 'GET', 'payload_size': 127}
+[2025-11-07T20:58:00.074432] ALERT - IP: 192.168.1.15, Attack Type: port_scanning, Details: {'endpoint': '/', 'method': 'GET', 'payload_size': 153}
+[2025-11-07T20:58:00.075336] BLOCKED (SIMULATION) - IP: 192.168.1.15, Reason: Agent blocked port_scanning
+[2025-11-07T20:58:00.077102] BLOCKED (SIMULATION) - IP: 192.168.1.45, Reason: Agent blocked brute_force
+[2025-11-07T21:10:11.169132] ALERT - IP: 192.168.1.48, Attack Type: xss, Details: {'endpoint': '/search', 'method': 'POST', 'payload_size': 32}
+[2025-11-07T21:10:11.171031] ALERT - IP: 192.168.1.36, Attack Type: suspicious, Details: {'endpoint': '/api/users', 'method': 'PUT', 'payload_size': 1759}
+[2025-11-07T21:10:11.171555] ALERT - IP: 192.168.1.9, Attack Type: suspicious, Details: {'endpoint': '/dashboard', 'method': 'PUT', 'payload_size': 1679}
+[2025-11-07T21:10:11.172200] ALERT - IP: 192.168.1.49, Attack Type: xss, Details: {'endpoint': '/api/users', 'method': 'POST', 'payload_size': 32}
+[2025-11-07T21:10:11.173160] BLOCKED (SIMULATION) - IP: 192.168.1.49, Reason: Agent blocked xss
+[2025-11-07T21:10:11.173883] ALERT - IP: 192.168.1.24, Attack Type: suspicious, Details: {'endpoint': '/api/data', 'method': 'POST', 'payload_size': 1803}
+[2025-11-07T21:10:11.174466] ALERT - IP: 192.168.1.5, Attack Type: csrf, Details: {'endpoint': '/admin/change', 'method': 'POST', 'payload_size': 23}
+[2025-11-07T21:10:11.174967] ALERT - IP: 192.168.1.5, Attack Type: csrf, Details: {'endpoint': '/admin/change', 'method': 'POST', 'payload_size': 16}
+[2025-11-07T21:10:11.176582] BLOCKED (SIMULATION) - IP: 192.168.1.2, Reason: Agent blocked xss
+[2025-11-07T21:10:11.177256] ALERT - IP: 192.168.1.9, Attack Type: suspicious, Details: {'endpoint': '/', 'method': 'POST', 'payload_size': 1420}
+[2025-11-07T21:10:11.178357] ALERT - IP: 192.168.1.9, Attack Type: command_injection, Details: {'endpoint': '/api/execute', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T21:10:11.180161] BLOCKED (SIMULATION) - IP: 192.168.1.29, Reason: Agent blocked normal
+[2025-11-07T21:10:11.180724] ALERT - IP: 192.168.1.34, Attack Type: suspicious, Details: {'endpoint': '/login', 'method': 'PUT', 'payload_size': 1002}
+[2025-11-07T21:10:11.181290] BLOCKED (SIMULATION) - IP: 192.168.1.20, Reason: Agent blocked path_traversal
+[2025-11-07T21:10:11.181915] ALERT - IP: 192.168.1.43, Attack Type: xss, Details: {'endpoint': '/admin', 'method': 'POST', 'payload_size': 32}
+[2025-11-07T21:10:11.182373] BLOCKED (SIMULATION) - IP: 192.168.1.43, Reason: Agent blocked xss
+[2025-11-07T21:10:11.182950] BLOCKED (SIMULATION) - IP: 192.168.1.9, Reason: Agent blocked brute_force
+[2025-11-07T21:10:11.183966] ALERT - IP: 192.168.1.45, Attack Type: phishing, Details: {'endpoint': '/reset-password?reset-password?token=fake', 'method': 'GET', 'payload_size': 25}
+[2025-11-07T21:10:11.184414] ALERT - IP: 192.168.1.45, Attack Type: phishing, Details: {'endpoint': '/update-account?verify-account?id=stolen', 'method': 'GET', 'payload_size': 24}
+[2025-11-07T21:10:11.187163] BLOCKED (SIMULATION) - IP: 192.168.1.48, Reason: Agent blocked port_scanning
+[2025-11-07T21:10:11.187814] ALERT - IP: 192.168.1.47, Attack Type: suspicious, Details: {'endpoint': '/api/users', 'method': 'POST', 'payload_size': 160}
+[2025-11-07T21:10:11.188381] BLOCKED (SIMULATION) - IP: 192.168.1.37, Reason: Agent blocked normal
+[2025-11-07T21:10:11.189180] ALERT - IP: 192.168.1.40, Attack Type: sql_injection, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T21:10:11.189712] BLOCKED (SIMULATION) - IP: 192.168.1.40, Reason: Agent blocked sql_injection
+[2025-11-07T21:10:11.190341] ALERT - IP: 192.168.1.31, Attack Type: path_traversal, Details: {'endpoint': '/file?file=../../../../windows/win.ini', 'method': 'GET', 'payload_size': 27}
+[2025-11-07T21:10:11.190772] ALERT - IP: 192.168.1.31, Attack Type: path_traversal, Details: {'endpoint': '/file?file=..\\..\\..\\windows\\system32\\config\\sam', 'method': 'GET', 'payload_size': 36}
+[2025-11-07T21:10:11.191217] ALERT - IP: 192.168.1.31, Attack Type: path_traversal, Details: {'endpoint': '/file?file=%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd', 'method': 'GET', 'payload_size': 39}
+[2025-11-07T21:10:11.191730] ALERT - IP: 192.168.1.31, Attack Type: path_traversal, Details: {'endpoint': '/api/document?file=..\\..\\..\\windows\\system32\\config\\sam', 'method': 'GET', 'payload_size': 36}
+[2025-11-07T21:10:11.192350] ALERT - IP: 192.168.1.31, Attack Type: path_traversal, Details: {'endpoint': '/read?file=../../../../windows/win.ini', 'method': 'GET', 'payload_size': 27}
+[2025-11-07T21:10:11.192903] ALERT - IP: 192.168.1.31, Attack Type: path_traversal, Details: {'endpoint': '/api/files?file=..%2F..%2F..%2Fetc%2Fpasswd', 'method': 'GET', 'payload_size': 27}
+[2025-11-07T21:10:11.193396] ALERT - IP: 192.168.1.5, Attack Type: suspicious, Details: {'endpoint': '/', 'method': 'HEAD', 'payload_size': 1790}
+[2025-11-07T21:10:11.194282] ALERT - IP: 192.168.1.1, Attack Type: port_scanning, Details: {'endpoint': '/', 'method': 'GET', 'payload_size': 108}
+[2025-11-07T21:10:11.195480] BLOCKED (SIMULATION) - IP: 192.168.1.1, Reason: Agent blocked port_scanning
+[2025-11-07T21:10:11.196497] BLOCKED (SIMULATION) - IP: 192.168.1.45, Reason: Agent blocked command_injection
+[2025-11-07T21:10:11.197137] BLOCKED (SIMULATION) - IP: 192.168.1.22, Reason: Agent blocked sql_injection
+[2025-11-07T21:10:11.200046] ALERT - IP: 192.168.1.17, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T21:10:11.200556] BLOCKED (SIMULATION) - IP: 192.168.1.17, Reason: Agent blocked brute_force
+[2025-11-07T21:10:11.201159] BLOCKED (SIMULATION) - IP: 192.168.1.15, Reason: Agent blocked sql_injection
+[2025-11-07T21:10:11.202896] BLOCKED (SIMULATION) - IP: 192.168.1.5, Reason: Agent blocked ddos
+[2025-11-07T21:10:11.203519] ALERT - IP: 192.168.1.1, Attack Type: suspicious, Details: {'endpoint': '/profile', 'method': 'DELETE', 'payload_size': 1755}
+[2025-11-07T21:10:11.204728] BLOCKED (SIMULATION) - IP: 192.168.1.35, Reason: Agent blocked sql_injection
+[2025-11-07T21:10:11.205310] ALERT - IP: 192.168.1.25, Attack Type: suspicious, Details: {'endpoint': '/dashboard', 'method': 'PUT', 'payload_size': 1562}
+[2025-11-07T21:10:11.205914] ALERT - IP: 192.168.1.13, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 10}
+[2025-11-07T21:10:11.207096] BLOCKED (SIMULATION) - IP: 192.168.1.13, Reason: Agent blocked brute_force
+[2025-11-07T21:10:11.207747] ALERT - IP: 192.168.1.30, Attack Type: command_injection, Details: {'endpoint': '/api/system', 'method': 'POST', 'payload_size': 11}
+[2025-11-07T21:10:11.208520] ALERT - IP: 192.168.1.30, Attack Type: command_injection, Details: {'endpoint': '/api/system', 'method': 'POST', 'payload_size': 32}
+[2025-11-07T21:10:11.209950] BLOCKED (SIMULATION) - IP: 192.168.1.1, Reason: Agent blocked brute_force
+[2025-11-07T21:10:11.210570] ALERT - IP: 192.168.1.22, Attack Type: suspicious, Details: {'endpoint': '/search', 'method': 'GET', 'payload_size': 291}
+[2025-11-07T21:10:11.211507] ALERT - IP: 192.168.1.10, Attack Type: suspicious, Details: {'endpoint': '/search', 'method': 'DELETE', 'payload_size': 748}
+[2025-11-07T21:10:11.211939] ALERT - IP: 192.168.1.42, Attack Type: brute_force, Details: {'endpoint': '/login', 'method': 'POST', 'payload_size': 12}
+[2025-11-07T21:10:11.213906] BLOCKED (SIMULATION) - IP: 192.168.1.42, Reason: Agent blocked brute_force
+[2025-11-07T21:10:11.214539] BLOCKED (SIMULATION) - IP: 192.168.1.30, Reason: Agent blocked command_injection
+[2025-11-07T21:10:11.215751] BLOCKED (SIMULATION) - IP: 192.168.1.30, Reason: Agent blocked xss
+[2025-11-07T21:10:11.216433] BLOCKED (SIMULATION) - IP: 192.168.1.7, Reason: Agent blocked phishing

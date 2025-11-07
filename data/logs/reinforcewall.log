@@ -1,0 +1,7 @@
+2025-11-07 20:56:06 - reinforcewall - INFO - Episode 0 - Reward: 1.00, Steps: 15, Attacks Detected: 9, FP: 1, FN: 4, Accuracy: 69.23%
+2025-11-07 20:56:06 - reinforcewall - INFO - Episode 1 - Reward: 8.00, Steps: 3, Attacks Detected: 2, FP: 0, FN: 1, Accuracy: 66.67%
+2025-11-07 20:56:06 - reinforcewall - INFO - Episode 2 - Reward: 11.00, Steps: 2, Attacks Detected: 2, FP: 0, FN: 0, Accuracy: 100.00%
+2025-11-07 20:56:06 - reinforcewall - INFO - Episode 3 - Reward: 9.00, Steps: 3, Attacks Detected: 2, FP: 0, FN: 1, Accuracy: 66.67%
+2025-11-07 20:56:06 - reinforcewall - INFO - Episode 4 - Reward: 5.00, Steps: 13, Attacks Detected: 3, FP: 0, FN: 3, Accuracy: 50.00%
+2025-11-07 20:56:06 - reinforcewall - INFO - Exported metrics to data/metrics/metrics_20251107_205606.csv
+2025-11-07 20:56:06 - reinforcewall - INFO - Exported metrics to data/metrics/metrics_20251107_205606.json

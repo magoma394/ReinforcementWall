@@ -1,6 +1,9 @@
 """
-Models package for Reinforcement Learning agents.
+Models package for ReinforceWall.
 
-This package will contain the Deep Q-Network (DQN) agent implementation.
+Contains RL agent implementations including DQN.
 """
 
+from models.dqn_agent import DQN, DQNAgent, ReplayBuffer
+
+__all__ = ["DQN", "DQNAgent", "ReplayBuffer"]

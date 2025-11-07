@@ -9,7 +9,7 @@ import json
 import csv
 from pathlib import Path
 from typing import List, Dict, Any, Optional
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from datetime import datetime
 
 from reinforcewall.logger import logger
@@ -28,7 +28,7 @@ class EpisodeMetrics:
     true_positives: int
     true_negatives: int
     action_distribution: Dict[int, int]  # Action -> count
-    avg_reward_per_step: float
+    avg_reward_per_step: float = field(init=False)  # Will be calculated in __post_init__
     
     def __post_init__(self):
         """Calculate derived metrics."""
